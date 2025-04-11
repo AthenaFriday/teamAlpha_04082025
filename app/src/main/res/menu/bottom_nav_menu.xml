@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popularFragment"
+        android:icon="@drawable/ic_popular"
+        android:title="Popular" />
+
+    <item
+        android:id="@+id/allFragment"
+        android:icon="@drawable/ic_all"
+        android:title="All" />
+
+    <item
+        android:id="@+id/alcoholicFragment"
+        android:icon="@drawable/ic_alcoholic"
+        android:title="Alcoholic" />
+
+    <item
+        android:id="@+id/nonAlcoholicFragment"
+        android:icon="@drawable/ic_non_alcoholic"
+        android:title="Non-Alcoholic" />
+
+</menu>

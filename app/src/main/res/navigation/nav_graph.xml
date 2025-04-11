@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/popularFragment">
+
+    <!-- Popular Cocktails Fragment -->
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.example.cocktailcatalog.ui.fragment.PopularFragment"
+        android:label="Popular">
+        <action
+            android:id="@+id/action_popularFragmentToCocktailDetailFragment"
+            app:destination="@id/cocktailDetailFragment" />
+    </fragment>
+
+    <!-- All Cocktails Fragment -->
+    <fragment
+        android:id="@+id/allFragment"
+        android:name="com.example.cocktailcatalog.ui.fragment.AllFragment"
+        android:label="All">
+        <action
+            android:id="@+id/action_allFragmentToCocktailDetailFragment"
+            app:destination="@id/cocktailDetailFragment" />
+    </fragment>
+
+    <!-- Alcoholic Cocktails Fragment -->
+    <fragment
+        android:id="@+id/alcoholicFragment"
+        android:name="com.example.cocktailcatalog.ui.fragment.AlcoholicFragment"
+        android:label="Alcoholic">
+        <action
+            android:id="@+id/action_alcoholicFragmentToCocktailDetailFragment"
+            app:destination="@id/cocktailDetailFragment" />
+    </fragment>
+
+    <!-- Non-Alcoholic Cocktails Fragment -->
+    <fragment
+        android:id="@+id/nonAlcoholicFragment"
+        android:name="com.example.cocktailcatalog.ui.fragment.NonAlcoholicFragment"
+        android:label="Non-Alcoholic">
+        <action
+            android:id="@+id/action_nonAlcoholicFragmentToCocktailDetailFragment"
+            app:destination="@id/cocktailDetailFragment" />
+    </fragment>
+
+    <!-- Cocktail Detail Fragment -->
+    <fragment
+        android:id="@+id/cocktailDetailFragment"
+        android:name="com.example.cocktailcatalog.ui.fragment.CocktailDetailFragment"
+        android:label="Detail">
+        <argument
+            android:name="cocktailId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
